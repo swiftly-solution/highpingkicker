@@ -1,0 +1,7 @@
+{
+    "max_ping": 150,
+    "checks_to_kick": 10,
+    "immune_steamids": [
+        "STEAMID64"
+    ]
+}
