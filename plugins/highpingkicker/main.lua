@@ -12,6 +12,7 @@ function PingCheckerTimer()
         if immune_steamids[steamid] then goto continue end
         if not checks[steamid] then checks[steamid] = 0 end
 
+        if not player:CCSPlayerController():IsValid() then return end
         local ping = player:CCSPlayerController().Ping
         if ping > max_ping then
             checks[steamid] = checks[steamid] + 1
